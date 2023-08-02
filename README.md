@@ -21,4 +21,5 @@ This is a simple client server in python.
 2. Feel free to do what ever you want with this code because I got quite a lot of this code from Tech with Tim.
 3. Finally, if you need any help feel free to message me if you find any errors or you are struggling to set this up! My Discord is @realdl
 
-Thank you. 🙏
+# Thank you. 🙏
+Thank you for reading this. Feel free to check out my other repositories!

@@ -2,7 +2,7 @@
 This is a simple client server in python. 
 
 # Pre-set up:
-1. Install python IDLE (here)[https://www.python.org/downloads/].
+1. Install python IDLE [here](https://www.python.org/downloads/).
 2. Make sure you install it **with** path otherwise installing pygame will be very difficult.
 3. run `pip install pygame` in cmd or powershell.
 4. run `pip instsall cryptography` in cmd or powershell.

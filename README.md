@@ -1,5 +1,5 @@
 # Simple-Client-Server
-This is a simple client server in python. 
+This is a simple client server program in python. It can host as many clients as you like.
 
 # Thank you Tech With Tim
 If you are wondering where I got the basis for the code please check out Tech with Tim [here](https://www.techwithtim.net/tutorials/python-online-game-tutorial/client)

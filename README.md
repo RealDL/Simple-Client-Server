@@ -1,6 +1,9 @@
 # Simple-Client-Server
 This is a simple client server in python. 
 
+# Thank you Tech With Tim
+If you are wondering where I got the basis for the code please check out Tech with Tim [here](https://www.techwithtim.net/tutorials/python-online-game-tutorial/client)
+
 # Pre-set up:
 1. Install python IDLE [here](https://www.python.org/downloads/).
 2. Make sure you install it **with** path otherwise installing pygame will be very difficult.

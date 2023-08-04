@@ -35,7 +35,7 @@ class Client(Config):
         self.player_image = self.player_info['image']
         self.id = self.player_info['id']
         #print(self.player_x,self.player_y,self.player_image)
-        self.player = Player([self.player_x,self.player_y],self.player_image,[self.level.visible_sprites],self.level.obstacle_sprites)
+        self.player = Player([self.player_x,self.player_y],self.player_image,self.level.obstacle_sprites)
         print(self.player)
         # Print statements
         print("Received key object:",self.encryption)
@@ -47,9 +47,8 @@ class Client(Config):
         self.players = []
         self.temp_player = None
         for dict in player_dict.values():
-            if not dict['id'] == self.id:
-                temp_player = Player([dict['x'],dict['y']],dict['image'],[self.level.visible_sprites],self.level.obstacle_sprites)
-                self.players.append(temp_player)
+            temp_player = Player([dict['x'],dict['y']],dict['image'],self.level.obstacle_sprites)
+            self.players.append(temp_player)
 
     def redraw_window(self, all_players_dict):
         self.create_players(all_players_dict)
@@ -59,6 +58,11 @@ class Client(Config):
         
         #Level for the player
         self.level.run()
+        self.player.update()
+        print("self.players",self.players)
+        for player in self.players:
+            print("sdjlosjdfkjlj",player)
+            player.draw(self.win)
 
         # Debug for the screen / update etc
         debug([self.player.rect.x, self.player.rect.y])
@@ -89,7 +93,6 @@ class Client(Config):
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         self.close()
-
             self.redraw_window(all_players_dict)
 
 if __name__ == "__main__":

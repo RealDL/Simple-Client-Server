@@ -1,9 +1,9 @@
 import pygame
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos, image, groups, obstacle_sprites):
+    def __init__(self, pos, image, obstacle_sprites):
         # Setting up player
-        super().__init__(groups)
+        super().__init__()
         self.image = pygame.image.load(image).convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.direction = pygame.math.Vector2()
@@ -40,7 +40,7 @@ class Player(pygame.sprite.Sprite):
 		# self.rect.center += self.direction * speed
 
     def draw(self,win):
-        win.blit(self.image, self.rect)
+        win.blit(self.image, [self.rect.x,self.rect.y])
 
     def collision(self,direction):
         if direction == 'horizontal':

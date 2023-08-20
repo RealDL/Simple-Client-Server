@@ -1,9 +1,6 @@
 # Simple-Client-Server
 This is a simple client server program in python. It can host as many clients as you like.
 
-# Thank you Tech With Tim
-If you are wondering where I got the basis for the code please check out Tech with Tim [here](https://www.techwithtim.net/tutorials/python-online-game-tutorial/client)
-
 # Pre-set up:
 1. Install python IDLE [here](https://www.python.org/downloads/).
 2. Make sure you install it **with** path otherwise installing pygame will be very difficult.
@@ -26,8 +23,7 @@ If you are wondering where I got the basis for the code please check out Tech wi
 # Notes
 1. The code has been designed to be a bullet proof simple method to host as many players on a server as you would like.
 2. The encryption does work but the key is sent through first to each client without any encryption. Other than that all the player objects are encrypted.
-3. Feel free to do what ever you want with this code because I got quite a lot of this code from Tech with Tim and Chat GPT.
-4. Finally, if you need any help feel free to message me if you find any errors or you are struggling to set this up. My Discord is @realdl
+3. Finally, if you need any help feel free to message me if you find any errors or you are struggling to set this up. My Discord is @realdl
 
 # Thank you. 🙏
 Thank you for reading this. Feel free to check out my other repositories.

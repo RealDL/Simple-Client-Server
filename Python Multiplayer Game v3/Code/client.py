@@ -19,10 +19,6 @@ class Client(Config):
         self.level = Level()
         self.players = []
         # Recieve the public key from the server and player
-
-        # Floor
-        self.floor_surf = pygame.image.load('Graphics/ground.png').convert()
-        self.floor_rect = self.floor_surf.get_rect(topleft = (0,0))
         
         self.network = Network()
         #try:
@@ -69,7 +65,6 @@ class Client(Config):
         self.create_players(all_players_dict)
         # Blits the background
         self.win.fill(self.BG_COLOR)
-        self.win.blit(self.floor_surf,self.floor_rect)
         
         #Level for the player
         self.level.run(self.player)

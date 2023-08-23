@@ -68,10 +68,7 @@ class Client(Config):
                     self.level.obstacle_sprites,
                     player_data['id']
                 )
-                self.players.append(new_player)
-
-
-        # Needs to be redesigned. Way too laggy. Insane player creation has made the program go mad.
+                self.players.append(new_player) 
 
     def redraw_window(self, all_players_dict):
         self.create_players(all_players_dict)

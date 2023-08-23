@@ -40,26 +40,38 @@ class Client(Config):
         #    self.close()
 
     def create_players(self, player_dict):
-        # Clear all existing player sprites from self.level.visible_sprites
-        ids_to_delete = []
-        for sprite in self.level.visible_sprites:
-            if sprite.id != self.TILE_ID:
-                ids_to_delete.append(sprite)
+        # Update existing player instances and remove players that are not in player_dict
+        players_to_remove = []
+        for player in self.players:
+            if player.id in player_dict:
+                player_data = player_dict[player.id]
+                player.rect.x = player_data['x']
+                player.rect.y = player_data['y']
+            else:
+                print(f"Removing player instance with id: {player.id}")
+                players_to_remove.append(player)
+        
+        for player in players_to_remove:
+            # Removes the player from self.players list and visible_sprites
+            self.players.remove(player)
+            self.level.visible_sprites.remove(player)
 
-        for sprite in ids_to_delete:
-            self.level.visible_sprites.remove(sprite)
-
-        self.players = []
+        # Create new player instances for players not already in self.players
         for player_data in player_dict.values():
-            new_player = Player(
-                [player_data['x'], player_data['y']],
-                player_data['image'],
-                self.level.visible_sprites,
-                self.level.obstacle_sprites,
-                player_data['id']
-            )
-            self.players.append(new_player)
+            player_ids = [player.id for player in self.players]
+            if player_data['id'] not in player_ids:
+                print(f"Creating new player instance with id: {player_data['id']}")
+                new_player = Player(
+                    [player_data['x'], player_data['y']],
+                    player_data['image'],
+                    self.level.visible_sprites,
+                    self.level.obstacle_sprites,
+                    player_data['id']
+                )
+                self.players.append(new_player)
 
+
+        # Needs to be redesigned. Way too laggy. Insane player creation has made the program go mad.
 
     def redraw_window(self, all_players_dict):
         self.create_players(all_players_dict)

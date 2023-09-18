@@ -1,0 +1,8 @@
+1. Add a new background. - Like a medium sized map.
+2. Add Player Animations.
+3. Allow Players to Shoot + Shoot Animations.
+4. Add player health, score, speed and bullet count.
+5. Allow Players to kill each other.
+6. Allow Players to stay dead.
+7. Clients Connect to A Start Screen.
+8. Then they can choose what lobby to Join (Different Servers will show up. Only one server per machine.)

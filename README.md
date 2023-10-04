@@ -3,10 +3,11 @@ This is a simple client server program in python. It can host as many clients as
 
 # Pre-set up:
 1. Install python IDLE [here](https://www.python.org/downloads/).
-2. Make sure you install it **with** path otherwise installing pygame will be very difficult.
+2. Make sure you install it **with** path otherwise installing external modules will be very difficult.
 3. run `pip install pygame` in cmd or powershell.
-4. run `pip instsall cryptography` in cmd or powershell.
-5. Make sure that your filewall has enabled python for private and public so that other computers on your local network can join the server.
+4. run `pip install rsa` in cmd or powershell.
+5. run `pip instsall pycryptodome` in cmd or powershell.
+6. Make sure that your filewall has enabled python for private and public so that other computers on your local network can join the server.
 
 # Set up:
 1. Download this repository.

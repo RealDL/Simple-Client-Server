@@ -1,0 +1,22 @@
+1. Add a new background. - Like a medium sized map. - DONE
+2. Add Player Animations. - DONE
+3. Allow Players to Shoot + Shoot Animations.
+4. Add player health, score, speed and bullet count.
+5. Allow Players to kill each other.
+6. Allow Players to stay dead.
+7. Clients Connect to A Start Screen. - DONE
+8. Then they can choose what lobby to Join (Different Servers will show up. Only one server per machine.) 
+   Sort of done. They can enter the ip they want to join. DONE
+
+
+
+14 oct 23:
+Make the code better. more efficent and nice. have client inside the main menu script or insdie Scripts. DONE
+make the graphics a bit better and the level and player code better. username graphics etc. DONE
+make the player have Animations. looks nice. DONE
+make the game have ui when esc pressed.
+fix up on finishing touches and polish up main menu when player quits and joins etc. DONE
+
+15 oct 23:
+Add some UI when ESC is pressed. have the same style as main menu. But with a back button, quit button,
+also a boarder. stop the player movement too. add the custom player key binds to the game.
